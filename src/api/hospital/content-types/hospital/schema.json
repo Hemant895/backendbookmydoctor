@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hospitals",
+  "info": {
+    "singularName": "hospital",
+    "pluralName": "hospitals",
+    "displayName": "Hospital"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "appoinment": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::appoinment.appoinment",
+      "inversedBy": "hospitals"
+    }
+  }
+}
